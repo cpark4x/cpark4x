@@ -1,4 +1,4 @@
-# cpark4x Toolkit
+# cpark4x-toolkit
 
 Personal collection of Amplifier recipes, bundles, and skills for Canvas/Workspaces development.
 
@@ -37,13 +37,13 @@ Domain-specific knowledge and patterns for Canvas development.
 Use the canvas-dev bundle directly from GitHub:
 
 ```bash
-amplifier run --bundle git+https://github.com/cpark4x/cpark4x@main:bundles/canvas-dev/bundle.md
+amplifier run --bundle git+https://github.com/cpark4x/cpark4x-toolkit@main:bundles/canvas-dev/bundle.md
 ```
 
 Or set as default in `~/.amplifier/settings.yaml`:
 
 ```yaml
-bundle: git+https://github.com/cpark4x/cpark4x@main:bundles/canvas-dev/bundle.md
+bundle: git+https://github.com/cpark4x/cpark4x-toolkit@main:bundles/canvas-dev/bundle.md
 ```
 
 ### Using Recipes
@@ -51,8 +51,8 @@ bundle: git+https://github.com/cpark4x/cpark4x@main:bundles/canvas-dev/bundle.md
 Reference recipes directly from GitHub:
 
 ```bash
-amplifier recipes execute git+https://github.com/cpark4x/cpark4x@main:recipes/canvas-epic-workflow.yaml \
-  --context '{"epic_name": "my-epic", "epic_path": "docs/02-requirements/epics/12-my-epic.md"}'
+amplifier recipes execute git+https://github.com/cpark4x/cpark4x-toolkit@main:recipes/canvas-epic-workflow.yaml \
+  --context '{"epic_number": "12", "epic_name": "my-epic", "epic_path": "docs/02-requirements/epics/12-my-epic.md"}'
 ```
 
 Or clone locally and reference by path.
@@ -70,8 +70,8 @@ Skills are cognitive frameworks - reference them in your prompts:
 
 ```bash
 # Clone locally
-git clone https://github.com/cpark4x/cpark4x.git
-cd cpark4x
+git clone https://github.com/cpark4x/cpark4x-toolkit.git
+cd cpark4x-toolkit
 
 # Set as your default bundle
 echo "bundle: $(pwd)/bundles/canvas-dev/bundle.md" >> ~/.amplifier/settings.yaml
